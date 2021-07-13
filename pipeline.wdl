@@ -19,15 +19,28 @@ version 1.0
 # studied species and its host.
 # 
 # 3. About the fastq map file format
-# Each line in the fastq_map file represents fastq_files for a single samples.
-#  1) first column is the id for host species, id=0, is for the host species
-#    of studied parasite species being studies. id=1 ...2 are for the host
-#    spcies of the closely related parasites.
-#  2) 2nd column is the unique sample names
-#  3) From 3rd column onward, each two columns represent fastq files for a
-#    single run. If it is single-end sequencing, the 2nd of each pair is set
-#    to 'single', the first of each pair is the actually fastq file. if it is
-#     paired-end sequence, both two in each pair are fastq files.
+# Each line in the fastq_map file represents fastq files for a single sample.
+#  1) The first column is the id for host species, id=0 is for the host species of the
+#  studied parasite species being studies. id=1 ...2 are for the host spcies of the
+#  closely related parasites, which are only used for ancestral allele inference.
+#  2) The 2nd column is the unique sample name
+#  3) From the3rd column onward, each two columns represent fastq files for a single
+#  run. If it is single-end sequencing, the 2nd of each pair is set to be a place holder
+#  'single', the first one of each pair is the actually fastq file; if it is paired-end
+#  sequencing, both two of each pair are fastq files and should not contain the place
+#  holder 'single'.
+# 
+#    Example 1: Single-run pair-end sequencing data
+#
+#		 0	s1	s1r1_1.fastq.gz	s1r1_2.fastq.gz
+#
+#    Example 2: Pair-end sequencing data with two runs
+#
+#		 0	s1	s1r1_1.fastq.gz	s1r1_2.fastq.gz	s1r2_1.fastq.gz	s1r2_2.fastq.gz
+#
+#    Example 3: Single-end sequencing data
+#    
+#    0	s1 s1r1.fastq.gq	single
 
 workflow mapping_and_snp_calling {
 	input {
