@@ -482,6 +482,12 @@ task filter_per_chr {
 		rm ./*.vcf
 	>>>
 
+	runtime {
+		memory: "50G"
+		cpu: 10
+		sge_queue: "threaded.q"
+	}
+
 	output {
 		File filter1_vcf = "out.vcf.gz"
 	}
@@ -523,6 +529,13 @@ task filter_genome_wide {
 		mv a5.vcf.gz ~{path.out_dir}/filtered.vcf.gz
 		rm  ./*.vcf.gz
 	>>>
+
+	runtime {
+		memory: "50G"
+		cpu: 10
+		sge_queue: "threaded.q"
+	}
+
 	
 	output {
 		String filtered_vcf = path.out_dir + '/filtered.vcf.gz'
