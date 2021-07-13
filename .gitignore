@@ -1,0 +1,7 @@
+/ref/*.vcf*
+/ref/*.fasta*
+/ref/*.dict
+/ref/*.bt*
+/ref/*.tbi
+/ref/*.idx
+/ref/*.fai
