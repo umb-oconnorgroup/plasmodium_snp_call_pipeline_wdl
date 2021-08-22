@@ -1,0 +1,1 @@
+../input/fastq_map.txt

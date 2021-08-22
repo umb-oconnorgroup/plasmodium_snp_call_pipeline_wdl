@@ -1,0 +1,5 @@
+0	ASAP001	/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl_git/data/ASAP001_1.fastq.gz	/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl_git/data/ASAP001_2.fastq.gz
+0	ASAP002	/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl_git/data/ASAP002_1.fastq.gz	/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl_git/data/ASAP002_2.fastq.gz
+0	ASAP007	/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl_git/data/ASAP007_1.fastq.gz	/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl_git/data/ASAP007_2.fastq.gz
+0	ASAP009	/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl_git/data/ASAP009_1.fastq.gz	/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl_git/data/ASAP009_2.fastq.gz
+0	ASAP010	/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl_git/data/ASAP010_1.fastq.gz	/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl_git/data/ASAP010_2.fastq.gz

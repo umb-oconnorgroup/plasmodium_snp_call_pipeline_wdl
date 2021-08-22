@@ -1,0 +1,41 @@
+{
+  "mapping_and_snp_calling.fastq_map":   "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/test/fastq_map.txt",
+  "mapping_and_snp_calling.fastq2bam_nthreads": "1",
+
+  "mapping_and_snp_calling.path_arr": [
+    {
+      "out_dir":                         "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/output",
+      "bedtools_exe": "/usr/local/bin/bedtools",
+      "bowtie2_exe": "/usr/local/bin/bowtie2",
+      "gatk_exe": "/usr/local/packages/gatk-4.1.7.0/gatk",
+      "java_exe": "/usr/local/packages/jdk-8u171/bin/java",
+      "samtools_exe": "/usr/local/bin/samtools",
+      "bcftools_exe": "/usr/local/bin/bcftools",
+      "known_snp_vcf": [
+        "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/known_snps_unsorted.vcf"
+      ],
+      "know_snp_idx": [
+        "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/known_snps_unsorted.vcf.idx"
+      ],
+      "ref_fasta": "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/PlasmoDB-44_Pfalciparum3D7_Genome.fasta",
+      "ref_fai": "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/PlasmoDB-44_Pfalciparum3D7_Genome.fasta.fai",
+      "ref_dict": "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/PlasmoDB-44_Pfalciparum3D7_Genome.dict",
+      "ref_idx": "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/PlasmoDB-44_Pfalciparum3D7_Genome.1.bt2",
+      "host_ref_fasta": "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/host/hg38.fasta",
+      "host_ref_fai": "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/host/hg38.fasta.fai",
+      "host_ref_dict": "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/host/hg38.dict",
+      "host_ref_idx": "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/host/hg38.1.bt2",
+      "host_known_snp_vcf": [
+        "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/host/Homo_sapiens_assembly38.dbsnp138.vcf",
+        "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/host/Homo_sapiens_assembly38.known_indels.vcf.gz",
+        "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/host/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz"
+      ],
+      "host_know_snp_idx": [
+        "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/host/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+        "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/host/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi",
+        "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/host/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi"
+      ]
+    }
+  ],
+  "mapping_and_snp_calling.chr_list": "/local/data/Malaria/Projects/Takala-Harrison/Cambodia_Bing/snp_call_wdl/ref/chr_list.txt"
+}

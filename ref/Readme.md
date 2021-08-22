@@ -38,3 +38,12 @@ gs://gcp-public-data--broad-references/hg38/v0/Mills_and_1000G_gold_standard.ind
 ```
 3. They can be downloaded by 
 `gsutil cp gs://my-awesome-bucket/kitten.png Desktop/kitten2.png`
+
+TODO: need to find the resource of the known site vcf for P.f.
+
+# Local copies of these ref files can be found on 
+
+- Rosalind:
+- Thanos/IGS
+
+

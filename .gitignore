@@ -1,7 +1,8 @@
-/ref/*.vcf*
-/ref/*.fasta*
-/ref/*.dict
-/ref/*.bt*
-/ref/*.tbi
-/ref/*.idx
-/ref/*.fai
+/ref/*
+!/ref/Readme.md
+/bin/*
+!/bin/Readme.md
+/test/*
+!/test/fastq_map.txt
+!/test/run_snp_call_pipeline.sh
+
