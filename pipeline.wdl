@@ -309,7 +309,7 @@ task bam2gvcf{
 		# Ref2: https://www.cureffi.org/2012/12/11/how-pcr-duplicates-arise-in-next-generation-sequencing/
 		~{path.gatk_exe} --java-options "-Xmx10G" \
 		MarkDuplicates \
-			--REMOVE_DUPLICATE \
+			--REMOVE_DUPLICATES \
 			-I sorted.bam -O dedup.bam --METRICS_FILE dedup_metrics.txt
 		rm sorted.bam dedup_metrics.txt 
 
