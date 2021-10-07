@@ -401,7 +401,7 @@ task import_gvcf{
 
 		~{path.gatk_exe} --java-options "-Xmx20G" \
 		GenomicsDBImport \
-			--batch-size 500 --consolidate \
+			--batch-size 500 --reader-threads 5 --consolidate \
 			--sample-name-map ~{gvcf_map} --genomicsdb-workspace-path my_database_~{fname}  -L ~{chrom}
 
 		mv my_database_~{fname} ~{path.out_dir}/db/
